@@ -5,6 +5,7 @@ import Signin from "./pages/Signin";
 import Signout from "./pages/Signout";
 import DashBoard from "./pages/DashBoard";
 import Projects from "./pages/Projects";
+import Header from "./components/Header";
 
 export default function App() {
   return (
@@ -14,6 +15,8 @@ export default function App() {
         v7_startTransition: true,
       }}
     >
+      <Header />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
