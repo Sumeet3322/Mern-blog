@@ -17,13 +17,13 @@ export default function Header() {
         </span>
         Blog
       </Link>
-      <form>
+      <form className="">
         <TextInput
           type="text"
           placeholder="Search..."
           rightIcon={AiOutlineSearch}
           className="hidden lg:inline"
-        ></TextInput>
+        />
       </form>
       <Button className="w-12 h-10 lg:hidden" color="gray" pill>
         <AiOutlineSearch />
@@ -33,24 +33,21 @@ export default function Header() {
           <FaMoon />
         </Button>
         <Link to="/sign-in">
-          <Button gradientDuoTone="purpleToBlue" color="gray" pill>
-            {" "}
+          <Button gradientDuoTone="purpleToBlue" outline color="gray" pill>
             Sign In
           </Button>
         </Link>
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
-        <Navbar.Link active={path === "/"} as={"div"}>
-          <Link to={"/"}>Home</Link>
+        <Navbar.Link as={Link} to="/" active={path === "/"}>
+          Home
         </Navbar.Link>
-        <Navbar.Link active={path === "/about"}>
-          {" "}
-          as={"div"}
-          <Link to={"/about"}>About</Link>
+        <Navbar.Link as={Link} to="/about" active={path === "/about"}>
+          About
         </Navbar.Link>
-        <Navbar.Link active={path === "/projects"} as={"div"}>
-          <Link to={"/projects"}>Projects</Link>
+        <Navbar.Link as={Link} to="/projects" active={path === "/projects"}>
+          Projects
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
