@@ -7,12 +7,12 @@ export default function Header() {
   const path = useLocation().pathname;
 
   return (
-    <Navbar className="border-b-2">
+    <Navbar className="border-b-2 fluid rounded w-full xl:px-32">
       <Link
         to="/"
         className="self-center whitespace-nowrap font-semibold sm:text-lg"
       >
-        <span className="px-2 py-2 bg-gradient-to-r text-white from-pink-400 via-purple-500  rounded-full">
+        <span className="px-2 py-1 bg-gradient-to-r text-white from-pink-400 via-purple-500  rounded-full">
           {"Stal's "}
         </span>
         Blog
