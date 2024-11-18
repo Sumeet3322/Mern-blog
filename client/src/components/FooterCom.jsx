@@ -11,7 +11,7 @@ import {
 export default function FooterCom() {
   return (
     <Footer container className="border-t-4 border-y-teal-500">
-      <div className="w-full max-w-[1400px] mx-auto ">
+      <div className="w-full max-w-[1425px] mx-auto ">
         <div className="w-full grid sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div className="mt-5">
             <Link

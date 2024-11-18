@@ -51,7 +51,7 @@ export default function Signup() {
             to="/"
             className="self-center whitespace-nowrap font-bold text-4xl "
           >
-            <span className="px-2 py-2 bg-gradient-to-r text-white from-pink-400 via-purple-500  rounded-full">
+            <span className="px-2 py-1 bg-gradient-to-r text-white from-pink-400 via-purple-500  rounded-full">
               {"Stal's "}
             </span>
             Blog
