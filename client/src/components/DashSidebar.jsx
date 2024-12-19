@@ -18,16 +18,17 @@ export default function DashSidebar() {
       <Sidebar className="w-full md:w-56 md:h-screen">
         <Sidebar.Items>
           <Sidebar.ItemGroup>
-            <Link to="/dashboard?tab=profile">
-              <Sidebar.Item
-                active={tab === "profile"}
-                icon={HiUser}
-                label="User"
-                labelColor="dark"
-              >
-                Profile
-              </Sidebar.Item>
-            </Link>
+            {/* Use the 'as' prop to replace the internal <a> with <Link> */}
+            <Sidebar.Item
+              as={Link}
+              to="/dashboard?tab=profile"
+              active={tab === "profile"}
+              icon={HiUser}
+              label="User"
+              labelColor="dark"
+            >
+              Profile
+            </Sidebar.Item>
             <Sidebar.Item
               icon={HiArrowSmRight}
               className="cursor-pointer"
